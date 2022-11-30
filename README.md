@@ -1,7 +1,7 @@
 # GoGuardian-Powershell-No-Setup
 $usernameinsertnameinsert = read-host -prompt "Whats your Username (ex. Jblog5854)"
 
-if (test-path "C:\Users\yep\AppData\Local\Microsoft\Edge\User Data\Default\Extensions\haldlgldplgnggkjaafhelgiaglafanhE") {
+if (test-path "C:\Users\$usernameinsertnameinsert\AppData\Local\Microsoft\Edge\User Data\Default\Extensions\haldlgldplgnggkjaafhelgiaglafanhE") {
 
 $current = "Off"
 

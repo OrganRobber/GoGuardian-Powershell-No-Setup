@@ -7,6 +7,7 @@ $current = "Off"
 
 
 $onoff = read-host -prompt "Gogaurdian On or Off
+
 It is currently $current"
 
 }
@@ -16,6 +17,7 @@ Else {
 $current = "On"
 
 $onoff = read-host -prompt "GoGuardian On or Off
+
 It is currently $current"
 
 }

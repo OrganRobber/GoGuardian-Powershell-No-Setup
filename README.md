@@ -134,4 +134,5 @@ if ($clearhost -notin $clearhostoptions) {
 Write-Host "ERROR: You must put exactly y or n, if you put anything else it will be ignored and nothing will happen"
 
 Write-Host " "
+
 }

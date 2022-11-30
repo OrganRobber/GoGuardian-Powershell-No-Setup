@@ -65,7 +65,9 @@ $onoffoptions = @(
 )
 
 If (Test-path -path "C:\Users\elock7767\AppData\Local\Microsoft\Edge\User Data\Default\Extensions\haldlgldplgnggkjaafhelgiaglafanhE") {
+
 break
+
 }
 
 Else {
@@ -76,8 +78,9 @@ break
 
 }
 
-
+Else {
 rename-item -path "C:\Users\\$usernameinsert\AppData\Local\Microsoft\Edge\User Data\Default\Extensions\haldlgldplgnggkjaafhelgiaglafanh" -newname "haldlgldplgnggkjaafhelgiaglafanhE"; new-item -Type Directory -path "C:\Users\\$usernameinsert\AppData\Local\Microsoft\Edge\User Data\Default\Extensions" -name "haldlgldplgnggkjaafhelgiaglafanh"
+}
 
 }
 

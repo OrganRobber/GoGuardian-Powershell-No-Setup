@@ -1,7 +1,7 @@
 # GoGuardian-Powershell-No-Setup
 $usernameinsertnameinsert = read-host -prompt "Whats your Username (ex. Jblog5854)"
 
-if (test-path "C:\Users\$usernameinsertnameinsert\AppData\Local\Microsoft\Edge\User Data\Default\Extensions\haldlgldplgnggkjaafhelgiaglafanhE") {
+if (test-path "C:\Users\\$usernameinsertnameinsert\AppData\Local\Microsoft\Edge\User Data\Default\Extensions\haldlgldplgnggkjaafhelgiaglafanhE") {
 
 $current = "Off"
 
@@ -22,13 +22,13 @@ It is currently $current"
 
 If ($onoff -eq "on") {
 
-move-item -path "C:\Users\$usernameinsertnameinsert\AppData\Local\Microsoft\Edge\User Data\Default\Extensions\haldlgldplgnggkjaafhelgiaglafanh" -destination "C:\Users\$usernameinsertnameinsert\AppData\Local\Microsoft\Edge\User Data\Default"; rename-item "C:\Users\$usernameinsertnameinsert\AppData\Local\Microsoft\Edge\User Data\Default\Extensions\haldlgldplgnggkjaafhelgiaglafanhE" -newname "haldlgldplgnggkjaafhelgiaglafanh"; get-process -name msedege | stop-process
+move-item -path "C:\Users\\$usernameinsertnameinsert\AppData\Local\Microsoft\Edge\User Data\Default\Extensions\haldlgldplgnggkjaafhelgiaglafanh" -destination "C:\Users\\$usernameinsertnameinsert\AppData\Local\Microsoft\Edge\User Data\Default"; rename-item "C:\Users\\$usernameinsertnameinsert\AppData\Local\Microsoft\Edge\User Data\Default\Extensions\haldlgldplgnggkjaafhelgiaglafanhE" -newname "haldlgldplgnggkjaafhelgiaglafanh"; get-process -name msedege | stop-process
 
 }
 
 if ($onoff -eq "off") {
 
-rename-item -path "C:\Users\$usernameinsertnameinsert\AppData\Local\Microsoft\Edge\User Data\Default\Extensions\haldlgldplgnggkjaafhelgiaglafanh" -newname "haldlgldplgnggkjaafhelgiaglafanhE"; move-item -path "C:\Users\$usernameinsertnameinsert\AppData\Local\Microsoft\Edge\User Data\Default\haldlgldplgnggkjaafhelgiaglafanh" -destination "C:\Users\$usernameinsertnameinsert\AppData\Local\Microsoft\Edge\User Data\Default\Extensions"; get-process -name msedge | Stop-Process
+rename-item -path "C:\Users\\$usernameinsertnameinsert\AppData\Local\Microsoft\Edge\User Data\Default\Extensions\haldlgldplgnggkjaafhelgiaglafanh" -newname "haldlgldplgnggkjaafhelgiaglafanhE"; move-item -path "C:\Users\\$usernameinsertnameinsert\AppData\Local\Microsoft\Edge\User Data\Default\haldlgldplgnggkjaafhelgiaglafanh" -destination "C:\Users\\$usernameinsertnameinsert\AppData\Local\Microsoft\Edge\User Data\Default\Extensions"; get-process -name msedge | Stop-Process
 
 }
 
@@ -75,7 +75,7 @@ break
 }
 
 
-rename-item -path "C:\Users\$usernameinsert\AppData\Local\Microsoft\Edge\User Data\Default\Extensions\haldlgldplgnggkjaafhelgiaglafanh" -newname "haldlgldplgnggkjaafhelgiaglafanhE"; new-item -Type Directory -path "C:\Users\$usernameinsert\AppData\Local\Microsoft\Edge\User Data\Default\Extensions" -name "haldlgldplgnggkjaafhelgiaglafanh"
+rename-item -path "C:\Users\\$usernameinsert\AppData\Local\Microsoft\Edge\User Data\Default\Extensions\haldlgldplgnggkjaafhelgiaglafanh" -newname "haldlgldplgnggkjaafhelgiaglafanhE"; new-item -Type Directory -path "C:\Users\\$usernameinsert\AppData\Local\Microsoft\Edge\User Data\Default\Extensions" -name "haldlgldplgnggkjaafhelgiaglafanh"
 
 }
 
@@ -87,7 +87,7 @@ $clearhostoptions = @(
 
 )
 
-if (test-path "C:\Users\$usernameinsert\AppData\Local\Microsoft\Edge\User Data\Default\Extensions\haldlgldplgnggkjaafhelgiaglafanhE") {
+if (test-path "C:\Users\\$usernameinsert\AppData\Local\Microsoft\Edge\User Data\Default\Extensions\haldlgldplgnggkjaafhelgiaglafanhE") {
 
 $current = "Off"
 
